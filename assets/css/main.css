@@ -10,6 +10,10 @@ body {
   background-color: #f5f5f5;
 }
 
+a {
+  text-decoration: none;
+}
+
 .text-primary {
   color: #e51820 !important;
 }
@@ -33,6 +37,20 @@ body {
 
 .mt--100 {
   margin-top: -100px;
+}
+.mt--150 {
+  margin-top: -150px;
+}
+.mt--200 {
+  margin-top: -200px;
+}
+.mt--250 {
+  margin-top: -250px;
+}
+
+/* Breadcrumb */
+a.breadcrumb-item {
+  text-transform: uppercase;
 }
 
 /* Navbar */
@@ -67,4 +85,30 @@ body {
 .card-title {
   line-height: 2em;
 
+}
+
+/* About */
+.about-text {
+  padding-bottom: 200px;
+}
+
+.about-img {
+  background-color: #fff;
+}
+
+.about-img img {
+  height: 450px;
+  object-fit: cover;
+}
+
+.about-awards {
+  padding: 4em 0;
+}
+
+/* philosophy */
+.philosophy-logo {
+  background-color: #f5f5f5;
+}
+.philosophy-logo img {
+  width: 150px;
 }
