@@ -7,7 +7,7 @@
 } */
 
 body {
-  background-color: #f5f5f5;
+  background-color: #f8f9fa !important;
 }
 
 a {
@@ -32,7 +32,10 @@ a {
 
 .bg-darker {
   background-color: #333;
+}
 
+.bg-lighter {
+  background-color: #fdfeff !important;
 }
 
 .mt--100 {
@@ -66,7 +69,6 @@ a.breadcrumb-item {
   bottom: auto;
   text-align: left;
   transform: translateY(-50%);
-
 }
 
 /* Fitur */
@@ -78,13 +80,11 @@ a.breadcrumb-item {
 
 .fitur .card-body {
   padding-left: 2em !important;
-
 }
 
 /* card */
 .card-title {
   line-height: 2em;
-
 }
 
 /* About */
@@ -111,4 +111,55 @@ a.breadcrumb-item {
 }
 .philosophy-logo img {
   width: 150px;
+}
+
+/* Products  List */
+.product-filter .list-group-item.active {
+  background-color: #e51820;
+  border-color: #e51820;
+}
+
+/* Products Page */
+#produk-title-slider .carousel-item img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#produk-title-slider .carousel-indicators {
+  justify-content: start;
+  margin-left: 2%;
+}
+#produk-title-slider .carousel-indicators [data-bs-target] {
+  opacity: 0.1;
+  background-color: #333;
+}
+#produk-title-slider .carousel-indicators [data-bs-target].active {
+  opacity: 1;
+}
+
+.product-img {
+  margin-bottom: -100px;
+  padding-left: 2em;
+  padding-top: 2em;
+  z-index: 1;
+}
+
+.product-img-bg {
+  max-height: 150px;
+  object-fit: cover;
+}
+
+img.product-img-overflow {
+  margin-right: -20%;
+  z-index: 1;
+  height: 90%;
+}
+@media (max-width: 576px) {
+  img.product-img-overflow {
+    margin-right: 0%;
+    margin-bottom: -70%;
+    z-index: 1;
+    height: 100%;
+  }
 }
