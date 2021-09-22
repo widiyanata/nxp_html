@@ -163,3 +163,8 @@ img.product-img-overflow {
     height: 100%;
   }
 }
+
+/* Contact */
+.contact-form {
+  margin-top: -30%;
+}
