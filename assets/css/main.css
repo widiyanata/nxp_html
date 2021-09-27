@@ -41,12 +41,15 @@ a {
 .mt--100 {
   margin-top: -100px;
 }
+
 .mt--150 {
   margin-top: -150px;
 }
+
 .mt--200 {
   margin-top: -200px;
 }
+
 .mt--250 {
   margin-top: -250px;
 }
@@ -82,6 +85,67 @@ a.breadcrumb-item {
   padding-left: 2em !important;
 }
 
+.fitur-text {
+  position: relative;
+}
+
+.fitur-text:after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1;
+
+  position: absolute;
+}
+
+.fitur .fitur-kiri .fitur-text:after {
+
+  border-top: 20px solid transparent;
+  border-left: 40px solid #fff;
+  border-bottom: 20px solid transparent;
+
+  right: -30px;
+}
+
+.fitur .fitur-kanan .fitur-text:after {
+  border-top: 20px solid transparent;
+  border-right: 40px solid #fff;
+  border-bottom: 20px solid transparent;
+
+  left: -30px;
+}
+
+.fitur .fitur-atas .fitur-text:after {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #fff;
+
+  top: -30px;
+  left: 50%;
+}
+
+@media (max-width: 425px) {
+  .fitur .fitur-kiri .fitur-text:after {
+    right: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+
+    border-left: 20px solid transparent;
+    border-top: 40px solid #fff;
+    border-right: 20px solid transparent;
+  }
+
+  .fitur .fitur-kanan .fitur-text:after {
+    left: 40%;
+    top: -40px;
+    transform: translateX(-50%);
+    border-left: 20px solid transparent;
+    border-bottom: 40px solid #fff;
+    border-right: 20px solid transparent;
+  }
+}
+
+
 /* card */
 .card-title {
   line-height: 2em;
@@ -109,6 +173,7 @@ a.breadcrumb-item {
 .philosophy-logo {
   background-color: #f5f5f5;
 }
+
 .philosophy-logo img {
   width: 150px;
 }
@@ -130,10 +195,12 @@ a.breadcrumb-item {
   justify-content: start;
   margin-left: 2%;
 }
+
 #produk-title-slider .carousel-indicators [data-bs-target] {
   opacity: 0.1;
   background-color: #333;
 }
+
 #produk-title-slider .carousel-indicators [data-bs-target].active {
   opacity: 1;
 }
@@ -155,6 +222,7 @@ img.product-img-overflow {
   z-index: 1;
   height: 90%;
 }
+
 @media (max-width: 576px) {
   img.product-img-overflow {
     margin-right: 0%;
