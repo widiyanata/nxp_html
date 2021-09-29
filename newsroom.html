@@ -114,8 +114,99 @@
       </div>
     </div>
 
+    <!-- Slider -->
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img
+            src="assets/img/slide-1.png"
+            class="img-fluid w-100"
+            alt="First slide"
+          />
+          <div class="carousel-caption">
+            <h1 class="display-6 my-5 text-white">Newsroom</h1>
+            <form action="">
+              <div class="input-group mb-3 input-group-lg">
+                <input
+                  type="text"
+                  class="form-control border-0"
+                  name="name"
+                  id="name"
+                  placeholder=""
+                  aria-label=""
+                />
+                <span class="input-group-btn">
+                  <button
+                    class="btn btn-light btn-lg bg-white"
+                    type="button"
+                    aria-label=""
+                  >
+                    <i class="fas fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+            <div class="search-tags text-white">
+              <p>
+                Popular Tags:
+                <a
+                  href="#"
+                  class="mx-1 btn btn-sm btn-outline-light rounded-pill"
+                  >Motor</a
+                >
+                <a
+                  href="#"
+                  class="mx-1 btn btn-sm btn-outline-light rounded-pill"
+                  >Yamaha</a
+                >
+                <a
+                  href="#"
+                  class="mx-1 btn btn-sm btn-outline-light rounded-pill"
+                  >Produk</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img/slide-1.png"
+            class="img-fluid w-100"
+            alt="First slide"
+          />
+          <div class="carousel-caption">
+            <h2 class="display-5 fw-bolder">
+              High Performance Engine Oil & Lubricants
+            </h2>
+            <p>
+              ENEOS NXP is the brand name for products manufactured and sold by
+              ENEOS
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselId"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselId"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
     <div
-      class="header vh-100"
+      class="header vh-100 d-none"
       style="padding-top: 100px; background: url(assets/img/slide-1.png)"
     >
       <!-- Breadcrumbs -->
@@ -229,7 +320,7 @@
               stories from the team behind company.
             </p>
           </header>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="row row-cols-1 row-cols-md-3 g-4 news-content">
             <div class="col">
               <div class="card h-100 border-0 shadow-sm">
                 <img
@@ -425,7 +516,7 @@
 
           <!-- load more -->
           <p class="text-center my-5">
-            <a href="#" class="btn btn-outline-primary">
+            <a href="#" class="btn btn-outline-primary load-more">
               More Articles
               <i class="fas fa-chevron-down"></i>
             </a>
@@ -496,6 +587,22 @@
     </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load more button -->
+    <script>
+      var html_content = $(".news-content .col").prop("outerHTML");
+      console.log(html_content);
+      $(".load-more").click(function (e) {
+        e.preventDefault();
+
+        $(".news-content").append(html_content);
+      });
+    </script>
 
     <script>
       var myNav = document.getElementById("nav");
