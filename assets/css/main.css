@@ -124,37 +124,6 @@ a.breadcrumb-item {
   left: 50%;
 }
 
-@media (max-width: 425px) {
-  .fitur .fitur-kiri .fitur-text:after {
-    right: 50%;
-    bottom: -40px;
-    transform: translateX(-50%);
-
-    border-left: 20px solid transparent;
-    border-top: 40px solid #fff;
-    border-right: 20px solid transparent;
-  }
-
-  .fitur .fitur-kanan .fitur-text:after {
-    left: 40%;
-    top: -40px;
-    transform: translateX(-50%);
-    border-left: 20px solid transparent;
-    border-bottom: 40px solid #fff;
-    border-right: 20px solid transparent;
-  }
-
-  /* slide */
-  .carousel-item {
-    background-color: #333;
-  }
-
-  .carousel-caption {
-    position: relative;
-    top: 100%;
-    transform: none;
-  }
-}
 
 .social-icon img {
   width: 25px;
@@ -249,4 +218,42 @@ img.product-img-overflow {
 /* Contact */
 .contact-form {
   margin-top: -30%;
+}
+
+
+@media (max-width: 425px) {
+  .fitur .fitur-kiri .fitur-text:after {
+    right: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+
+    border-left: 20px solid transparent;
+    border-top: 40px solid #fff;
+    border-right: 20px solid transparent;
+  }
+
+  .fitur .fitur-kanan .fitur-text:after {
+    left: 40%;
+    top: -40px;
+    transform: translateX(-50%);
+    border-left: 20px solid transparent;
+    border-bottom: 40px solid #fff;
+    border-right: 20px solid transparent;
+  }
+
+  /* slide */
+  .carousel-item {
+    background-color: #333;
+  }
+
+  .carousel-caption {
+    position: relative;
+    top: 100%;
+    transform: none;
+  }
+
+  .about-img img {
+    height: auto;
+    object-fit: cover;
+  }
 }
