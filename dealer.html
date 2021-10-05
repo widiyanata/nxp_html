@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>ENEOS NXP</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="">
+    <div class="navigasi fixed-top">
+      <nav id="nav" class="navbar navbar-expand-md navbar-light bg-white py-4">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" class="img-fluid" alt="" />
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">Who we are</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dealer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="newsroom.html">News & Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="campaign.html">Campaign</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="navbar-nav">
+              <div class="dropdown open">
+                <a
+                  class="btn btn-transparent nav-link dropdown-toggle"
+                  type="button"
+                  id="triggerId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-globe"></i>
+                  Indonesia
+                </a>
+                <div class="dropdown-menu" aria-labelledby="triggerId">
+                  <a class="dropdown-item" href="#">English</a>
+                  <a class="dropdown-item" href="#">Indonesia</a>
+                </div>
+              </div>
+
+              <a
+                class="btn btn-transparent nav-link"
+                data-bs-toggle="collapse"
+                href="#contentId"
+                aria-expanded="false"
+                aria-controls="contentId"
+              >
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="collapse" id="contentId">
+            <div class="row">
+              <form action="">
+                <div class="form-group">
+                  <input type="text" class="form-control" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header bg-light" style="padding-top: 100px">
+      <!-- Breadcrumbs -->
+      <div class="py-3">
+        <div class="container">
+          <nav class="breadcrumb mb-0">
+            <a class="breadcrumb-item text-muted" href="#">Home</a>
+            <a class="breadcrumb-item text-muted" href="#">Dealer</a>
+            <span class="breadcrumb-item active">LIST DEALER</span>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Marker -->
+    <div id="map-markers">
+      <div id="map-canvas"></div>
+      <style>
+        #map-canvas {
+          height: 100vh;
+        }
+      </style>
+    </div>
+
+    <div class="navbar-footer">
+      <nav class="navbar navbar-expand navbar-dark bg-darker">
+        <div class="container">
+          <div class="nav navbar-nav me-auto">
+            <a class="nav-item nav-link" href="#">Terms of service </a>
+            <a class="nav-item nav-link" href="#">Privacy policy</a>
+            <a class="nav-item nav-link" href="#">Cookie preferences</a>
+            <div class="dropup open">
+              <a
+                class="btn btn-transparent nav-link dropdown-toggle"
+                type="button"
+                id="triggerId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fas fa-globe"></i>
+                Indonesia
+              </a>
+              <div class="dropdown-menu" aria-labelledby="triggerId">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Indonesia</a>
+              </div>
+            </div>
+          </div>
+          <div class="nav navbar-nav social-icon">
+            <a class="nav-item nav-link" href="#">
+              <img src="assets/img/socmed/ig.png" alt="" />
+            </a>
+            <a class="nav-item nav-link" href="#">
+              <img src="assets/img/socmed/fb.png" alt="" />
+            </a>
+            <a class="nav-item nav-link" href="#">
+              <img src="assets/img/socmed/tw.png" alt="" />
+            </a>
+            <a class="nav-item nav-link" href="#">
+              <img src="assets/img/socmed/in.png" alt="" />
+            </a>
+            <a class="nav-item nav-link" href="#">
+              <img src="assets/img/socmed/yt.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="py-3 bg-dark">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col col d-flex align-items-center">
+              <p class="m-0 text-light" style="font-size: 10px">
+                Copyright © 1990 - 2020 PT Nippon Oil Indonesia. All rights
+                reserved. Various trademarks held by their respective owners.
+              </p>
+            </div>
+            <div class="col d-flex align-items-center justify-content-end">
+              <img src="assets/img/logo-black.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpsV-h4Z8KsOhWgxQbNdwSgjmy-GwHqfo"></script>
+
+    <script>
+      function initMap() {
+        var map;
+        var bounds = new google.maps.LatLngBounds();
+        var mapOptions = {
+          mapTypeId: "roadmap",
+          zoom: 1,
+          styles: [
+            {
+              featureType: "poi",
+              elementType: "labels",
+              stylers: [{ visibility: "off" }],
+            },
+          ],
+        };
+
+        // Display a map on the web page
+        map = new google.maps.Map(
+          document.getElementById("map-canvas"),
+          mapOptions
+        );
+        map.setTilt(50);
+
+        var infoWindow = new google.maps.InfoWindow(),
+          marker,
+          i;
+
+        var y,
+          markers = [],
+          infoWindowContent = [],
+          markerAll = [],
+          map_icon = [];
+
+        // Judul dan posisi lang, lat
+        markers = [
+          ["NXP JAKARTA", -6.218935929779865, 106.83380734926148],
+          ["NXP BANTEN", -6.404571315191548, 106.00159307717688],
+          ["NXP BANDUNG", -6.906534991453892, 107.58911738446362],
+        ];
+
+        // Deskripsi Tentang Lokasi
+        infoWindowContent = [
+          [
+            '<div class="info_content">' +
+              "<h3>NXP Jakarta</h3>" +
+              "<p>Deskripsi.</p>" +
+              "</div>",
+          ],
+          [
+            '<div class="info_content">' +
+              "<h3>NXP BANTEN</h3>" +
+              "<p>Tentukan lokasi.</p>" +
+              "</div>",
+          ],
+          [
+            '<div class="info_content">' +
+              "<h3>NXP BANDUNG</h3>" +
+              "<p>Deskripsi.</p>" +
+              "</div>",
+          ],
+        ];
+
+        // sesuaikan dengan tempat
+        map_icon = "assets/img/alamat.png";
+
+        // Unset Marker
+        for (var i = 0; i < markerAll.length; i++) {
+          markerAll[i].setMap(null);
+        }
+
+        // Set Marker
+        allMarker(markers, infoWindowContent, map_icon);
+
+        // Set zoom level
+        var boundsListener = google.maps.event.addListener(
+          map,
+          "bounds_changed",
+          function (event) {
+            this.setZoom(8);
+            google.maps.event.removeListener(boundsListener);
+          }
+        );
+
+        function allMarker(markers, infoWindowContent, icon) {
+          for (i = 0; i < markers.length; i++) {
+            var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+            bounds.extend(position);
+
+            marker = new google.maps.Marker({
+              position: position,
+              map: map,
+              title: markers[i][0],
+              icon: {
+                url: icon,
+                scaledSize: new google.maps.Size(50, 50), // size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(0, 0), // anchor
+                labelOrigin: new google.maps.Point(25, -10),
+              },
+              label: {
+                color: "red",
+                fontWeight: "bold",
+                text: markers[i][0],
+                fontSize: "14px",
+              },
+            });
+
+            markerAll.push(marker);
+
+            // Add info window to marker
+            google.maps.event.addListener(
+              marker,
+              "click",
+              (function (marker, i) {
+                return function () {
+                  infoWindow.setContent(infoWindowContent[i][0]);
+                  infoWindow.open(map, marker);
+                };
+              })(marker, i)
+            );
+
+            // Center the map to fit all markers on the screen
+            map.fitBounds(bounds);
+          }
+        }
+      }
+
+      // Load initialize function
+      google.maps.event.addDomListener(window, "load", initMap);
+    </script>
+  </body>
+</html>
