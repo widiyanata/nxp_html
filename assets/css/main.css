@@ -68,7 +68,7 @@ a.breadcrumb-item {
 .carousel-caption {
   top: 50%;
   left: 15%;
-  max-width: 40%;
+  max-width: 70%;
   bottom: auto;
   text-align: left;
   transform: translateY(-50%);
@@ -218,6 +218,15 @@ img.product-img-overflow {
 /* Contact */
 .contact-form {
   margin-top: -30%;
+}
+
+.navbar-collapse.show {
+  background: #fff;
+  padding: 10px;
+}
+
+.navbar-collapse.show .nav-link {
+  color: #333;
 }
 
 
